@@ -14,7 +14,7 @@ describe('ItemsinList',() => {
         }
     });
     it('Empty list add first ToDo', () => {
-        expect(wrapper.find('tere').text()).toEqual('Add your first Todo task');
+        expect(wrapper.find('h3').text()).toEqual('Add your first Todo task');
 
     })
 });
