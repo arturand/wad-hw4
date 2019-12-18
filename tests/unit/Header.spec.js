@@ -34,7 +34,8 @@ describe('Header is rendered correctly', () => {
     });
 
     it('Renders the correct weekday', () => {
+        let weekdays = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
         let weekday = new Date().getDay();
-        expect(wrapper.html()).toContain(weekday)
+        expect(wrapper.html()).toContain(weekdays[weekday])
     });
 });
